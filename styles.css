@@ -28,7 +28,6 @@ p {
 #taskList { 
     list-style: none; 
     padding: 0; 
-    /* background-color: #FFF1CB; */
     width: 100%;
     max-width: 400px;
     

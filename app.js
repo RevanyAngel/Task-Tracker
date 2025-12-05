@@ -14,23 +14,19 @@ function renderTasks() {
     const li = document.createElement('li');
     li.dataset.id = task.id;
 
-    // === Checkbox di sini ===
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.className = 'chk';
-    checkbox.checked = task.completed; // otomatis check/uncheck berdasarkan status
+    checkbox.checked = task.completed; 
 
-    // text
     const span = document.createElement('span');
     span.textContent = task.description;
     if (task.completed) span.classList.add('completed');
 
-    // tombol delete dengan icon tong sampah
     const delBtn = document.createElement('button');
     delBtn.textContent = '🗑️';
     delBtn.className = 'delete';
 
-    // masukkan ke <li>
     li.append(checkbox, span, delBtn);
     taskList.appendChild(li);
   }
