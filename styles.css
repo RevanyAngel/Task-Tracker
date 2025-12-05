@@ -1,0 +1,114 @@
+main {
+    font-family: "Roboto Mono", monospace;
+}
+
+section {
+    box-sizing: border-box;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+h1 {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: .3rem;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    color: #555;
+}
+
+#taskList { 
+    list-style: none; 
+    padding: 0; 
+    /* background-color: #FFF1CB; */
+    width: 100%;
+    max-width: 400px;
+    
+}
+#taskList li { 
+    display:flex; 
+    gap:8px; 
+    align-items:center; 
+    padding:6px; 
+    border-bottom: 1px solid rgb(184, 184, 184);
+    justify-content: space-between;
+}
+
+#taskList li .delete {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 8px;
+    transition: opacity 0.2s;
+}
+
+#taskList li .delete:hover {
+    opacity: 0.7;
+}
+#taskList span.completed { 
+    text-decoration: line-through; 
+    opacity: 0.7; }
+
+#taskForm { 
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    font-family: "Roboto Mono", monospace;
+    width: 70%;
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid rgb(114, 113, 113);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    font-family: "Roboto Mono", monospace;
+    width: 25%;
+    border-radius: 10px;
+    background-color: #C2E2FA;
+    border: 1px solid rgb(114, 113, 113);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-tambah {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-tambah:hover {
+    background-color: #A9D0F5;
+}
+
+.chk {
+    width: 20px;
+    height: 20px;
+}
+
+.delete {
+    font-size: 16px;
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete:hover {
+    opacity: 0.5;
+}
